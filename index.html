@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=w, initial-scale=1.0">
+    <title>TCES Proyecto</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+            @font-face {
+                font-family:roboto;
+                src: url(Fonts/Roboto-Regular.ttf); }
+            @font-face {
+                font-family:robotobold;
+                src: url(Fonts/Roboto-Bold.ttf); 
+            }
+            @font-face {
+                font-family:robotomedium;
+                src: url(Fonts/Roboto-Medium.ttf); 
+            }
+            
+         /*Primera Linea*/
+         #logotable{
+            border-bottom: solid #f4f4f4; width: 100%; height: 50px;
+         }    
+        .firstline{
+            width: 100%; align-content: center;
+        }
+        #mainlogo{
+            height: 90px; align-items: center;
+        }
+        #primerafila{
+            font-family: robotobold; font-size: 40px; color: #f4f4f4; text-decoration: none;align-items: center;
+        }
+        nav{
+            height: 50px; width: 100%; background-color: #a8a9ad; color: white; font-family: robotobold;
+        }
+        #maincat{
+            height: 50px;
+        }
+        td{
+            text-align: center;
+        }
+        #searchbar{
+            height: 30px; align-items: center;
+        }
+        /*Segunda Linea*/
+
+        .mainimagestable{
+            width: 100%; align-items: center;
+        }
+        #mainphoto{
+            width: 300px; height: 300px; border: solid 3px #f4f4f4;
+        }
+        #mainar{
+         text-decoration: none;   margin: 2%;
+        }
+
+        /*Tercera Linea*/
+        #slogan{
+            font-family: robotobold; font-size: 25px; color: #ffd571;
+        }
+
+        /*Cuarta Fila*/
+        .infotable{
+            width: 50%; height: 200px; border: #ffd571 solid 3px;
+        }
+        #inforow{
+            width: 100%;
+        }
+        #tabletitle{
+            font-family: robotobold; font-size: 25px; color: #f4f4f4; background-color: #2A3D66; height: 20%;
+        }
+        #tablecont{
+            font-family: robotobold; font-family: 25px; text-align: justify; margin: 2%; color: #f4f4f4;
+        }
+        #infot{
+            background-color: #2A3D66; border: solid 3px #f4f4f4; width: 50%;
+        }
+    </style>
+</head>
+<body bgcolor="#2a3d66">
+    <br>
+    <table id="logotable">
+    <tr class="firstline">
+    <td><a href="index.html" id="mainlogo"><img id="mainlogo" src="mainlogo.png"></a></td>
+    <td><a href="vlog.html" id="primerafila"><img id="maincat" src="blog.png"></a></td>
+    <td><a href="talleres.html" id="primerafila"><img id="maincat" src="talleres.png"></a></td>
+    <td><a href="cursos.html" id="primerafila"><img id="maincat" src="cursos.png"></a></td>
+    <td><a href="servicios.html" id="primerafila"><img id="maincat" src="servicios.png"></a></td>
+    <td><input id="searchbar"></td>
+    </tr>
+    </table>
+
+    <center>
+    <p id="slogan">FOMENTO DEL EMPRENDIMIENTO TECNOLÓGICO Y FINANCIERO EN LA REPÚBLICA DOMINICANA.</p>
+
+    <table class="mainimagestable">
+        <a href="emprendimiento.html" id="mainar"><img id="mainphoto" src="emprendimientomain.png"></a>
+        <a href="finanzas.html" id="mainar"><img id="mainphoto" src="finanzasmain.png"></a>
+        <a href="marketing.html" id="mainar"><img id="mainphoto" src="marketingmain.png"></a>
+    </table>
+    
+    <br>
+
+    <table class="infotable">
+        <tr id="inforow">
+            <td id="infot"><p id="tabletitle">¿QUIÉNES SOMOS?</p></td>
+            <td id="infot"><p id="tabletitle">¿QUÉ HACEMOS?</p></td>
+        </tr>
+        <tr id="inforow">
+            <td id="infot"><p id="tablecont">Somos un equipo de profesionales apasionados por el fomento del emprendimiento en la República Dominicana.
+                 Nos hemos unido para crear Tech Fomenta RD, una plataforma dedicada a apoyar a los futuros empresarios del país, proporcionando 
+                 las herramientas y conocimientos necesarios para tener éxito en sus iniciativas.</p></td>
+            <td id="infot"><p id="tablecont">En Tech Fomenta RD, ofrecemos una gama integral de servicios diseñados para empoderar a emprendedores de entre 18 y 40 años. 
+                Nuestro enfoque se centra en tres pilares fundamentales: Educación Empresarial, Financiera y Tecnológica. </p></td>
+        </tr></center>
+    </table>
+
+
+</body>
+</html>
