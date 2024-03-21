@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talleres - Tech Fomenta RD</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2A3D66;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            color: white;
+            text-align: center;
+        }
+        .chosen {
+            background-color: #202e4c64;
+        }
+        #logotable {
+            border-bottom: solid 3px #f4f4f4;
+            width: 90%;
+            background-color: #2a3d661d;
+        }
+        .firstline {
+            width: 100%;
+            text-align: center;
+        }
+        #mainlogo {
+            margin-top: 5%;
+            width: 100%;
+            vertical-align: middle;
+        }
+        .nav-item {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            color: #f4f4f4;
+            text-decoration: none;
+            padding: 15px;
+            display: inline-block;
+        }
+        #searchbar {
+            width: 100px;
+            height: 50%;
+            margin-left: 10px;
+        }
+        td {
+            text-align: center;
+        }
+        #maincat {
+            width: 100%;
+        }
+        #maincat:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(42, 61, 102, 0.2);
+        }
+        #slogan {
+            font-size: 25px;
+            color: #FFD571;
+            margin: 20px 0;
+        }
+        .workshop-section {
+            background-color: #FFFFFF;
+            color: #2A3D66;
+            margin: 60px 5% 20px;
+            padding: 20px;
+            border-radius: 8px;
+            width: 60%;
+        }
+        h3 {
+            color: #00684f;
+        }
+        p {
+            font-size: 18px;
+            color: #2A3D66;
+        }
+        footer {
+            background-color: #A8A9AD;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-top: solid #F4F4F4 3px;
+            border-bottom: solid #F4F4F4 3px;
+        }
+        footer p, footer a {
+            color: white;
+            margin: 10px 0;
+        }
+        footer a {
+            color: #FFD571;
+        }
+        .workshop-item {
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: justify;
+        }
+        .workshop-item h3 {
+            margin-bottom: 5px;
+        }
+        .taller-description {
+            color: #F4F4F4;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 18px;
+            width: 60%;
+        }
+        #inscription{
+            width: 10%; text-decoration: none; border: #00684f solid 2px; background-color: #F4F4F4; color: #00684f;
+        }
+        .chat-bot {
+            height: 400px;
+            width: 350px;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table id="logotable">
+            <tr class="firstline">
+                <td><a href="index.html"><img src="mainlogo.png" alt="TechFomenta RD Logo" id="mainlogo"></a></td>
+                <td><a href="blog.html" class="nav-item"><img id="maincat" src="blog.png" alt="Blog"></a></td>
+                <td><a href="talleres.html" class="nav-item chosen"><img id="maincat" src="talleres.png" alt="Talleres"></a></td>
+                <td><a href="cursos.html" class="nav-item"><img id="maincat" src="cursos.png" alt="Cursos"></a></td>
+                <td><a href="servicios.html" class="nav-item"><img id="maincat" src="servicios.png" alt="Servicios"></a></td>
+                <td><input id="searchbar" type="search" placeholder="Buscar..."></td>
+            </tr>
+        </table>
+    </center>
+    <h1 id="slogan">CALENDARIO DE TALLERES TECHFOMENTA RD</h1>
+    <main>
+        <center>
+        <p class="taller-description">En Tech Fomenta RD, ofrecemos una variedad de servicios diseñados para empoderar y equipar a los emprendedores dominicanos con las habilidades y herramientas necesarias para tener éxito.</p>
+        
+        <div class="workshop-section">
+            <h2>TALLERES OFRECIDOS:</h2>
+            <center>
+                <div class="workshop-item">
+                    <h3>Talleres de Finanzas Empresariales</h3>
+                    <p>Impartido por: Juan Martínez, Contador Certificado. Fecha: 15 de marzo de 2024.</p>
+                    <p>Estos talleres cubren desde la gestión del flujo de caja y la contabilidad hasta la planificación financiera estratégica y la gestión de inversiones para empresas.</p>
+                    <button onclick="inscribe()" id="inscription">¡Inscríbete!</button></div>
+    
+                <div class="workshop-item">
+                    <h3>Talleres de Finanzas Personales</h3>
+                    <p>Impartido por: María López, Asesora Financiera. Fecha: 22 de marzo de 2024.</p>
+                    <p>Orientados a mejorar la gestión del dinero a nivel personal, incluyendo temas como el ahorro, la inversión, la planificación para la jubilación y la gestión de deudas.</p>
+                    <button onclick="inscribe()" id="inscription">¡Inscríbete!</button></div>
+    
+                <div class="workshop-item">
+                    <h3>Taller de Mercadeo</h3>
+                    <p>Impartido por: Carlos Pérez, Especialista en Marketing Digital. Fecha: 29 de marzo de 2024.</p>
+                    <p>Aborda desde los fundamentos del mercadeo hasta estrategias avanzadas y digitales, incluyendo marketing en redes sociales, SEO, y marketing de contenido.</p>
+                    <button onclick="inscribe()" id="inscription">¡Inscríbete!</button></div>
+    
+                <div class="workshop-item">
+                    <h3>Taller de Planificación de Negocios</h3>
+                    <p>Impartido por: Ana Gómez, Consultora de Negocios. Fecha: 5 de abril de 2024.</p>
+                    <p>Guía a los emprendedores a través del proceso de creación de un plan de negocios efectivo, abordando elementos como la misión de la empresa, el análisis de mercado y la planificación financiera.</p>
+                    <button onclick="inscribe()" id="inscription">¡Inscríbete!</button></div>
+    
+                <div class="workshop-item">
+                    <h3>Taller de Innovación y Creatividad en los Negocios</h3>
+                    <p>Impartido por: Roberto Díaz, Experto en Innovación. Fecha: 12 de abril de 2024.</p>
+                    <p>Ayuda a desarrollar habilidades para pensar de manera creativa y aplicar la innovación en el desarrollo y mejora de productos, servicios y procesos empresariales.</p>
+                    <button onclick="inscribe()" id="inscription">¡Inscríbete!</button></div>
+    
+                <div class="workshop-item">
+                    <h3>Taller de Estrategias de Ventas</h3>
+                    <p>Impartido por: Laura Castillo, Gerente de Ventas. Fecha: 19 de abril de 2024.</p>
+                    <p>Enseña técnicas efectivas para mejorar las ventas, desde el entendimiento del proceso de venta hasta el desarrollo de habilidades de negociación y cierre de ventas.</p>
+                    <button onclick="inscribe()" id="inscription">¡Inscríbete!</button></div>
+    
+                <div class="workshop-item">
+                    <h3>Taller de Liderazgo y Gestión de Equipos</h3>
+                    <p>Impartido por: Daniel Torres, Coach de Liderazgo. Fecha: 26 de abril de 2024.</p>
+                    <p>Capacita a los emprendedores en habilidades de liderazgo, comunicación efectiva, y gestión de equipos, cruciales para el éxito de cualquier negocio.</p>
+                    <button onclick="inscribe()" id="inscription">¡Inscríbete!</button></div>
+    
+                <div class="workshop-item">
+                    <h3>Taller de Presencia Digital para Empresas</h3>
+                    <p>Impartido por: Sofía Rodríguez, Especialista en Marketing Online. Fecha: 3 de mayo de 2024.</p>
+                    <p>Orienta sobre cómo establecer y optimizar la presencia en línea de un negocio, incluyendo la creación de sitios web, el uso de redes sociales y el comercio electrónico.</p>
+                    <button onclick="inscribe()" id="inscription">¡Inscríbete!</button></div>
+    
+                <div class="workshop-item">
+                    <h3>Taller de Legalidades y Cumplimiento para Emprendedores</h3>
+                    <p>Impartido por: Eduardo Vargas, Abogado Empresarial. Fecha: 10 de mayo de 2024.</p>
+                    <p>Proporciona una visión general de las consideraciones legales y de cumplimiento necesarias para operar un negocio, incluyendo la formación de la empresa, las licencias, los permisos y las regulaciones fiscales.</p>
+                    <button onclick="inscribe()" id="inscription">¡Inscríbete!</button></div>
+                </center>
+                    </div>
+                    </main></center>
+    <br>
+    <div id="chatbot"><iframe class="chat-bot" frameBorder="0" src="https://widget.writesonic.com/CDN/index.html?service-base-url=https://api.botsonic.ai&token=55e06761-dfad-4597-b0f0-5e06d9f61dde&base-origin=https://bot.writesonic.com&instance-name=Botsonic&standalone=true&page-url=https://bot.writesonic.com/04379986-65d6-4696-8c25-ae7531008f72?t=connect&workspace_id=dc2acf47-60c9-4066-b4d0-ae24543cf6d2"></iframe></div>
+                    <footer>
+    <br>
+    <b style="text-align: center;">© 2024 TechFomenta RD - Todos los derechos reservados.</b>
+    <b style="margin-left: 10%; text-align: center;">Basado en República Dominicana.</b>
+    <br><br>
+    <p style="margin-left: 10%; text-align: justify;">Participantes: Alina Báez, Jean Montero, Enlil Núñez, Paola Saviñón y Diana Saviñón</p>
+    <p style="margin-left: 10%; text-align: justify;">Colegio Bilingüe New Horizons - 12mo Grado / 6to de Bachillerato</p>
+    <p style="margin-left: 10%; text-align: justify;">Contacto: <a href="mailto:info@techfomentard.com" style="color: #FFD571;">info@techfomentard.com</a></p>
+    <b style="text-align: center;">¡Síguenos en nuestras redes sociales!</b>
+    <p style="color: #009975; text-align: center;">@TechFomentaRD</p>
+
+</footer>
+<script>
+    function inscribe(){
+        alert("La inscripción a este taller no está disponible por el momento.");
+    }
+</script>
+</body>
+</html>
