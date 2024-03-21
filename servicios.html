@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Tech Fomenta RD</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #2A3D66;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            color: white;
+            text-align: center;
+        }
+        .chosen {
+            background-color: #202e4c64;
+        }
+        #logotable {
+            border-bottom: solid 3px #f4f4f4;
+            width: 90%;
+            background-color: #2a3d661d;
+        }
+        .firstline {
+            width: 100%;
+            text-align: center;
+        }
+        #mainlogo {
+            margin-top: 5%;
+            width: 100%;
+            vertical-align: middle;
+        }
+        .nav-item {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            color: #f4f4f4;
+            text-decoration: none;
+            padding: 15px;
+            display: inline-block;
+        }
+        #searchbar {
+            width: 100px;
+            height: 50%;
+            margin-left: 10px;
+        }
+        td {
+            text-align: center;
+        }
+        #maincat {
+            width: 100%;
+        }
+        #maincat:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(42, 61, 102, 0.2);
+        }
+        #slogan {
+            font-size: 25px;
+            color: #FFD571;
+            margin: 20px 0;
+        }
+        .service-section {
+            background-color: #FFFFFF;
+            color: #2A3D66;
+            margin: 60px 5% 20px;
+            padding: 20px;
+            border-radius: 8px;
+            width: 60%;
+        }
+        h3 {
+            color: #00684f;
+        }
+        p {
+            font-size: 18px;
+            color: #2A3D66;
+        }
+        footer {
+            background-color: #A8A9AD;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-top: solid #F4F4F4 3px;
+            border-bottom: solid #F4F4F4 3px;
+        }
+        footer p, footer a {
+            color: white;
+            margin: 10px 0;
+        }
+        footer a {
+            color: #FFD571;
+        }
+        .service-item {
+            margin-bottom: 20px;
+            width: 100%;
+            text-align: justify;
+        }
+        .service-item h3 {
+            margin-bottom: 5px;
+        }
+        .service-description {
+            color: #F4F4F4;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 18px;
+            width: 60%;
+        }
+        .chat-bot {
+            height: 400px;
+            width: 350px;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tabla de navegación -->
+    <center>
+        <table id="logotable">
+            <tr class="firstline">
+                <td><a href="index.html"><img src="mainlogo.png" alt="TechFomenta RD Logo" id="mainlogo"></a></td>
+                <td><a href="blog.html" class="nav-item"><img id="maincat" src="blog.png" alt="Blog"></a></td>
+                <td><a href="talleres.html" class="nav-item"><img id="maincat" src="talleres.png" alt="Talleres"></a></td>
+                <td><a href="cursos.html" class="nav-item"><img id="maincat" src="cursos.png" alt="Cursos"></a></td>
+                <td><a href="servicios.html" class="nav-item"><img id="maincat" class="chosen" src="servicios.png" alt="Servicios"></a></td>
+                <td><input id="searchbar" type="search" placeholder="Buscar..."></td>
+            </tr>
+        </table>
+    </center>
+<center>
+    <!-- Contenido principal -->
+    <h1 id="slogan">¡NUESTROS EXPERTOS A TU SERVICIO!</h1>
+    <p class="service-description">
+        Conecta con nuestro equipo de expertos, cada uno especializado en un área crítica del emprendimiento y la gestión empresarial. Están aquí para apoyarte y aportar a tu empresa con su conocimiento y experiencia.
+    </p>
+
+    <div class="service-section">
+        <!-- Expertos en Finanzas -->
+        <h2>Expertos en Finanzas</h2>
+        <div class="service-item">
+            <h3>Juan Pérez - Experto en Finanzas Empresariales</h3>
+            <p>Especialidad: Optimización financiera y estrategias de inversión.</p>
+            <p>Cómo puede ayudar: Juan puede asesorarte en la planificación financiera, la gestión de riesgos y la identificación de oportunidades de inversión para fortalecer la salud financiera de tu empresa.</p>
+            <p>Contacto: <a href="mailto:juan.perez@techfomentard.com">juan.perez@techfomentard.com</a></p>
+        </div>
+        <div class="service-item">
+            <h3>Luisa Rodríguez - Consultora Financiera</h3>
+            <p>Especialidad: Análisis financiero y modelos de pronóstico.</p>
+            <p>Cómo puede ayudar: Luisa ofrece análisis detallados para mejorar la toma de decisiones financieras y la previsión de futuras tendencias de negocio.</p>
+            <p>Contacto: <a href="mailto:luisa.rodriguez@techfomentard.com">luisa.rodriguez@techfomentard.com</a></p>
+        </div>
+
+        <!-- Expertos en Marketing -->
+        <h2>Expertos en Marketing</h2>
+        <div class="service-item">
+            <h3>Ana Martínez - Especialista en Marketing Digital</h3>
+            <p>Especialidad: Estrategias de marketing digital y presencia online.</p>
+            <p>Cómo puede ayudar: Ana te guiará en la creación e implementación de estrategias de marketing digital efectivas para aumentar tu visibilidad en línea y atraer más clientes.</p>
+            <p>Contacto: <a href="mailto:ana.martinez@techfomentard.com">ana.martinez@techfomentard.com</a></p>
+        </div>
+        <div class="service-item">
+            <h3>Roberto Soto - Experto en SEO y Contenido Digital</h3>
+            <p>Especialidad: Optimización de motores de búsqueda y marketing de contenido.</p>
+            <p>Cómo puede ayudar: Roberto puede incrementar la visibilidad de tu sitio web y mejorar la estrategia de contenido para capturar y retener la atención del público objetivo.</p>
+            <p>Contacto: <a href="mailto:roberto.soto@techfomentard.com">roberto.soto@techfomentard.com</a></p>
+        </div>
+
+        <!-- Expertos en Emprendimiento -->
+        <h2>Expertos en Emprendimiento</h2>
+        <div class="service-item">
+            <h3>Camila Gutiérrez - Mentora en Emprendimiento</h3>
+            <p>Especialidad: Desarrollo de nuevos negocios y estrategias de crecimiento.</p>
+            <p>Cómo puede ayudar: Camila proporciona orientación para iniciar y escalar negocios, desde la ideación hasta la ejecución y expansión.</p>
+            <p>Contacto: <a href="mailto:camila.gutierrez@techfomentard.com">camila.gutierrez@techfomentard.com</a></p>
+        </div>
+        <div class="service-item">
+            <h3>David Castillo - Asesor de Startups</h3>
+            <p>Especialidad: Incubación de startups y capital de riesgo.</p>
+            <p>Cómo puede ayudar: David te ayudará a navegar por el ecosistema de startups, encontrar financiamiento y establecer conexiones clave.</p>
+            <p>Contacto: <a href="mailto:david.castillo@techfomentard.com">david.castillo@techfomentard.com</a></p>
+        </div>
+
+        <!-- Expertos en Tecnología -->
+        <h2>Expertos en Tecnología</h2>
+        <div class="service-item">
+            <h3>Sofía Álvarez - Especialista en Innovación Tecnológica</h3>
+            <p>Especialidad: Implementación de nuevas tecnologías y automatización de procesos.</p>
+            <p>Cómo puede ayudar: Sofía te asesorará sobre la integración de soluciones tecnológicas para optimizar las operaciones de tu negocio.</p>
+            <p>Contacto: <a href="mailto:sofia.alvarez@techfomentard.com">sofia.alvarez@techfomentard.com</a></p>
+            </div></div>
+</center><br>
+<div id="chatbot"><iframe class="chat-bot" frameBorder="0" src="https://widget.writesonic.com/CDN/index.html?service-base-url=https://api.botsonic.ai&token=55e06761-dfad-4597-b0f0-5e06d9f61dde&base-origin=https://bot.writesonic.com&instance-name=Botsonic&standalone=true&page-url=https://bot.writesonic.com/04379986-65d6-4696-8c25-ae7531008f72?t=connect&workspace_id=dc2acf47-60c9-4066-b4d0-ae24543cf6d2"></iframe></div>
+    <br><!-- Pie de página -->
+    <footer>
+        <br>
+        <b style="text-align: center;">© 2024 TechFomenta RD - Todos los derechos reservados.</b> <b style="margin-left: 10%; text-align: center;">Basado en República Dominicana.</b><br><br>
+        <p style="margin-left: 10%; text-align: justify;">Participantes: Alina Báez, Jean Montero, Enlil Núñez, Paola Saviñón y Diana Saviñón</p>
+        <p style="margin-left: 10%; text-align: justify;">Colegio Bilingüe New Horizons - 12mo Grado / 6to de Bachillerato</p>
+        <p style="margin-left: 10%; text-align: justify;">Contacto: <a href="mailto:info@techfomentard.com" style="color: #FFD571;">info@techfomentard.com</a></p>
+        <b style="text-align: center;">¡Síguenos en nuestras redes sociales!</b> <p style="color: #009975; text-align: center;">@TechFomentaRD</p> 
+    </footer>
+        </body>
+        </html>
