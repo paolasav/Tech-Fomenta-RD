@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Tech Fomenta RD</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500" rel="stylesheet">
+    <style>
+        body {
+            background-color: #2A3D66;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            color: white;
+            text-align: center;
+        }
+        .chosen {
+            background-color: #202e4c64;
+        }
+        #logotable {
+            border-bottom: solid 3px #f4f4f4;
+            width: 90%;
+            background-color: #2a3d661d;
+        }
+        .firstline {
+            width: 100%;
+            text-align: center;
+        }
+        #mainlogo {
+            margin-top: 5%;
+            width: 100%;
+            vertical-align: middle;
+        }
+        .nav-item {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            color: #f4f4f4;
+            text-decoration: none;
+            padding: 15px;
+            display: inline-block;
+        }
+        #searchbar {
+            width: 100px;
+            height: 50%;
+            margin-left: 10px;
+        }
+        td {
+            text-align: center;
+        }
+        #maincat {
+            width: 100%;
+        }
+        #maincat:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(42, 61, 102, 0.2);
+        }
+        #slogan {
+            font-size: 25px;
+            color: #FFD571;
+            margin: 20px 0;
+        }
+        .course-section{
+            margin: 20px 5%;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            color: #2A3D66;
+            width: 80%;
+            text-align: left;
+        }
+        .course-description {
+            color: #F4F4F4;
+            margin: 20px 5%;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        h3 {
+            color: #00684f;
+        }
+        .course-item {
+            font-size: 18px;
+            color: #2A3D66;
+            text-align: justify;
+        }
+        .course-item {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #A8A9AD;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-top: solid #F4F4F4 3px;
+            border-bottom: solid #F4F4F4 3px;
+        }
+        footer p, footer a {
+            margin: 10px 0;
+        }
+        footer a {
+            color: #FFD571;
+        }
+        #inscription {
+            background-color: #F4F4F4;
+            color: #00684f;
+            padding: 10px;
+            border: solid 2px #00684f;
+            text-align: center;
+            display: inline-block;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .chat-bot {
+            height: 400px;
+            width: 350px;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <table id="logotable" class="firstline">
+            <tr>
+                <td><a href="index.html"><img src="mainlogo.png" alt="TechFomenta RD Logo" id="mainlogo"></a></td>
+                <td><a href="blog.html" class="nav-item"><img id="maincat" src="blog.png" alt="Blog"></a></td>
+                <td><a href="talleres.html" class="nav-item"><img id="maincat" src="talleres.png" alt="Talleres"></a></td>
+                <td><a href="cursos.html" class="nav-item chosen"><img id="maincat" src="cursos.png" alt="Cursos"></a></td>
+                <td><a href="servicios.html" class="nav-item"><img id="maincat" src="servicios.png" alt="Servicios"></a></td>
+                <td><input id="searchbar" type="search" placeholder="Buscar..."></td>
+            </tr>
+        </table>
+    </center>
+    <h1 id="slogan">OFERTA DE CURSOS IMPARTIDOS POR PROFESIONALES CERTIFICADOS DE TECHFOMENTA RD</h1>
+    <div class="course-description">
+        <p>En Tech Fomenta RD, entendemos la importancia de una educación continua y accesible. Por eso, ofrecemos una amplia gama de cursos online diseñados para equiparte con conocimientos y habilidades cruciales en el mundo empresarial y tecnológico. Nuestros cursos están estructurados para que puedas avanzar a tu propio ritmo, facilitando el aprendizaje sin importar tu horario o ubicación.</p>
+    </div>
+    
+    <div class="course-section">
+        <h2>CURSOS OFRECIDOS:</h2>
+        <div class="course-item">
+            <h3>Fundamentos de Negocios</h3>
+            <p>Impartido por: Claudia Fernández, MBA. Fecha de inicio: 20 de abril de 2024.</p>
+            <p>Este curso abarca los conceptos esenciales de la gestión empresarial y administrativa. Profundizarás en la estructuración organizativa, la gestión financiera efectiva, las estrategias de mercado y el desarrollo de modelos de negocio sostenibles.</p>
+            <button onclick="inscribe()" id="inscription">¡Inscríbete!</button>
+        </div>
+    
+        <div class="course-item">
+            <h3>Estrategias Avanzadas de Tecnología</h3>
+            <p>Impartido por: Marcos Ruiz, Experto en Tecnologías Emergentes. Fecha de inicio: 27 de abril de 2024.</p>
+            <p>Este curso te proporcionará una comprensión profunda de las últimas tendencias tecnológicas y cómo se pueden aplicar para impulsar la innovación en tu empresa. Aprenderás sobre big data, inteligencia artificial, automatización y mucho más.</p>
+            <button onclick="inscribe()" id="inscription">¡Inscríbete!</button>
+        </div>
+    
+        <div class="course-item">
+            <h3>Marketing Digital</h3>
+            <p>Impartido por: Laura Jiménez, Especialista en Marketing Digital. Fecha de inicio: 4 de mayo de 2024.</p>
+            <p>Descubre las claves para construir y mantener una sólida presencia online. Este curso cubrirá SEO, marketing en redes sociales, estrategias de contenido, análisis de datos y técnicas publicitarias en línea para atraer y retener clientes.</p>
+            <button onclick="inscribe()" id="inscription">¡Inscríbete!</button>
+        </div>
+    
+        <div class="course-item">
+            <h3>Emprendimiento e Innovación</h3>
+            <p>Impartido por: Ernesto Sánchez, Emprendedor Serial y Mentor. Fecha de inicio: 11 de mayo de 2024.</p>
+            <p>Este curso está diseñado para inspirar y guiar a los futuros empresarios a través del proceso de convertir ideas innovadoras en startups exitosas. Aprenderás sobre la mentalidad emprendedora, el desarrollo de productos, la financiación de empresas y estrategias de crecimiento.</p>
+            <button onclick="inscribe()" id="inscription">¡Inscríbete!</button>
+        </div>
+    </div>
+    <br>
+    <div id="chatbot"><iframe class="chat-bot" frameBorder="0" src="https://widget.writesonic.com/CDN/index.html?service-base-url=https://api.botsonic.ai&token=55e06761-dfad-4597-b0f0-5e06d9f61dde&base-origin=https://bot.writesonic.com&instance-name=Botsonic&standalone=true&page-url=https://bot.writesonic.com/04379986-65d6-4696-8c25-ae7531008f72?t=connect&workspace_id=dc2acf47-60c9-4066-b4d0-ae24543cf6d2"></iframe></div>
+    <footer>
+        <br>
+        <b style="text-align: center;">© 2024 TechFomenta RD - Todos los derechos reservados.</b> <b style="margin-left: 10%; text-align: center;">Basado en República Dominicana.</b><br><br>
+        <p style="margin-left: 10%; text-align: justify;">Participantes: Alina Báez, Jean Montero, Enlil Núñez, Paola Saviñón y Diana Saviñón</p>
+        <p style="margin-left: 10%; text-align: justify;">Colegio Bilingüe New Horizons - 12mo Grado / 6to de Bachillerato</p>
+        <p style="margin-left: 10%; text-align: justify;">Contacto: <a href="mailto:info@techfomentard.com" style="color: #FFD571;">info@techfomentard.com</a></p>
+        <b style="text-align: center;">¡Síguenos en nuestras redes sociales!</b> <p style="color: #009975; text-align: center;">@TechFomentaRD</p> 
+    </footer>
+    <script>
+       function inscribe(){
+        alert("La inscripción a este curso no está disponible por el momento.");
+    }
+    </script>
+    </body>
+    </html>
