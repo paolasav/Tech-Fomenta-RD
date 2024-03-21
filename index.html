@@ -1,121 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <!-- Metadatos y referencias a recursos externos -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=w, initial-scale=1.0">
-    <title>TCES Proyecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFomenta RD | Fomentando Emprendimiento</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500" rel="stylesheet">
+
     <style>
-            @font-face {
-                font-family:roboto;
-                src: url(Fonts/Roboto-Regular.ttf); }
-            @font-face {
-                font-family:robotobold;
-                src: url(Fonts/Roboto-Bold.ttf); 
-            }
-            @font-face {
-                font-family:robotomedium;
-                src: url(Fonts/Roboto-Medium.ttf); 
-            }
-            
-         /*Primera Linea*/
-         #logotable{
-            border-bottom: solid #f4f4f4; width: 100%; height: 50px;
-         }    
-        .firstline{
-            width: 100%; align-content: center;
-        }
-        #mainlogo{
-            height: 90px; align-items: center;
-        }
-        #primerafila{
-            font-family: robotobold; font-size: 40px; color: #f4f4f4; text-decoration: none;align-items: center;
-        }
-        nav{
-            height: 50px; width: 100%; background-color: #a8a9ad; color: white; font-family: robotobold;
-        }
-        #maincat{
-            height: 50px;
-        }
-        td{
-            text-align: center;
-        }
-        #searchbar{
-            height: 30px; align-items: center;
-        }
-        /*Segunda Linea*/
+/* Estilos generales */
+body {
+    background-color: #2A3D66;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
 
-        .mainimagestable{
-            width: 100%; align-items: center;
-        }
-        #mainphoto{
-            width: 300px; height: 300px; border: solid 3px #f4f4f4;
-        }
-        #mainar{
-         text-decoration: none;   margin: 2%;
-        }
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #A8A9AD;
+    color: white;
+    padding: 10px 0;
+    font-weight: bold;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
 
-        /*Tercera Linea*/
-        #slogan{
-            font-family: robotobold; font-size: 25px; color: #ffd571;
-        }
+/* Estilos para la tabla de la barra de navegación */
+#logotable {
+    border-bottom: solid 3px #f4f4f4; 
+    width: 90%; 
+    background-color: #2A3D66;
+    text-align: center;
+}
+.firstline {
+    width: 100%; 
+    text-align: center;
+}
+#mainlogo {
+    margin-top: 5%;
+    width:100%;
+    vertical-align: middle;
+}
+.nav-item {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px;
+    color: #f4f4f4; 
+    text-decoration: none;
+    padding: 15px; 
+    display: inline-block;
+}
+#searchbar {
+    width: 100px;
+    height: 50%; 
+    margin-left: 10px;
+}
+td {
+    text-align: center;
+}
+#maincat {
+    width: 100%;
+}
+#maincat:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(42, 61, 102, 0.2);
+}
 
-        /*Cuarta Fila*/
-        .infotable{
-            width: 50%; height: 200px; border: #ffd571 solid 3px;
-        }
-        #inforow{
-            width: 100%;
-        }
-        #tabletitle{
-            font-family: robotobold; font-size: 25px; color: #f4f4f4; background-color: #2A3D66; height: 20%;
-        }
-        #tablecont{
-            font-family: robotobold; font-family: 25px; text-align: justify; margin: 2%; color: #f4f4f4;
-        }
-        #infot{
-            background-color: #2A3D66; border: solid 3px #f4f4f4; width: 50%;
+/* Estilos del slogan */
+#slogan {
+    font-size: 25px;
+    color: #FFD571;
+    margin: 20px 0;
+}
+
+/* Estilos para las imágenes principales */
+.mainimage {
+    width: 30%;
+    margin: 10px;
+    border: solid 3px #F4F4F4;
+}
+.mainimage:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(42, 61, 102, 0.2);
+}
+
+/* Estilos de los botones de información */
+.infobutton {
+    width: 30%; 
+    height: 40px;
+    background-color: #F4F4F4;
+    font-weight: bold;
+    color: #2A3D66;
+    border: none;
+    cursor: pointer;
+    margin: 10px; 
+}
+
+/* Estilos para la sección de información */
+.info-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.info-card {
+    background-color: #FFFFFF;
+    color: #2A3D66;
+    width: 25%;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+.info-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(42, 61, 102, 0.2);
+}
+h3 {
+    text-align: center;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #A8A9AD;
+    color: white;
+    clear: both;
+    width: 100%;
+    border-top: solid #F4F4F4 3px;
+    border-bottom: solid 3px #f4f4f4; 
+}
+.chat-bot {
+            height: 400px;
+            width: 350px;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            border: none;
         }
     </style>
 </head>
-<body bgcolor="#2a3d66">
-    <br>
+<body style="background-color: #2a3d66;">
+    <!-- Tabla de navegación -->
+    <center>
     <table id="logotable">
     <tr class="firstline">
-    <td><a href="index.html" id="mainlogo"><img id="mainlogo" src="mainlogo.png"></a></td>
-    <td><a href="vlog.html" id="primerafila"><img id="maincat" src="blog.png"></a></td>
-    <td><a href="talleres.html" id="primerafila"><img id="maincat" src="talleres.png"></a></td>
-    <td><a href="cursos.html" id="primerafila"><img id="maincat" src="cursos.png"></a></td>
-    <td><a href="servicios.html" id="primerafila"><img id="maincat" src="servicios.png"></a></td>
-    <td><input id="searchbar"></td>
+    <td><a href="index.html"><img src="mainlogo.png" alt="TechFomenta RD Logo" id="mainlogo"></a></td>
+    <td><a href="blog.html" class="nav-item"><img id="maincat" src="blog.png" alt="Blog"></a></td>
+    <td><a href="talleres.html" class="nav-item"><img id="maincat" src="talleres.png" alt="Talleres"></a></td>
+    <td><a href="cursos.html" class="nav-item"><img id="maincat" src="cursos.png" alt="Cursos"></a></td>
+    <td><a href="servicios.html" class="nav-item"><img id="maincat" src="servicios.png" alt="Servicios"></a></td>
+    <td><input id="searchbar" type="search" placeholder="Buscar..."></td>
     </tr>
     </table>
-
-    <center>
-    <p id="slogan">FOMENTO DEL EMPRENDIMIENTO TECNOLÓGICO Y FINANCIERO EN LA REPÚBLICA DOMINICANA.</p>
-
-    <table class="mainimagestable">
-        <a href="emprendimiento.html" id="mainar"><img id="mainphoto" src="emprendimientomain.png"></a>
-        <a href="finanzas.html" id="mainar"><img id="mainphoto" src="finanzasmain.png"></a>
-        <a href="marketing.html" id="mainar"><img id="mainphoto" src="marketingmain.png"></a>
-    </table>
+</center>
+<!-- Contenido principal -->
+<main>
+    <h1 id="slogan">CREANDO EL FUTURO DEL EMPRENDIMIENTO EN LA REPÚBLICA DOMINICANA</h1>
     
+    <!-- Imágenes principales -->
+    <div>
+        <a href="emprendimiento.html"><img class="mainimage" src="emprendimientomain.png" alt="Emprendimiento"></a>
+        <a href="finanzas.html"><img class="mainimage" src="finanzasmain.png" alt="Finanzas"></a>
+        <a href="marketing.html"><img class="mainimage" src="marketingmain.png" alt="Marketing"></a>
+    </div>
+    
+    <!-- Secciones de información -->
+    <div class="info-section">
+        <div class="info-card">
+            <h3>¿Quiénes Somos?</h3>
+            <p id="description">Somos un equipo dedicado a fomentar el emprendimiento en la República Dominicana, comprometidos con la innovación y el desarrollo sostenible.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>¿Qué Hacemos?</h3>
+            <p id="description">Ofrecemos asesoramiento, recursos y herramientas para transformar ideas en negocios exitosos.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Únete a Nosotros</h3>
+            <p id="description">Buscamos personas apasionadas y motivadas para unirse a nuestra misión de apoyo al emprendimiento local.</p>
+        </div>
+    </div>
+</main>
+<div id="chatbot"><iframe class="chat-bot" frameBorder="0" src="https://widget.writesonic.com/CDN/index.html?service-base-url=https://api.botsonic.ai&token=55e06761-dfad-4597-b0f0-5e06d9f61dde&base-origin=https://bot.writesonic.com&instance-name=Botsonic&standalone=true&page-url=https://bot.writesonic.com/04379986-65d6-4696-8c25-ae7531008f72?t=connect&workspace_id=dc2acf47-60c9-4066-b4d0-ae24543cf6d2"></iframe></div>
+<!-- Pie de página -->
+<footer>
     <br>
-
-    <table class="infotable">
-        <tr id="inforow">
-            <td id="infot"><p id="tabletitle">¿QUIÉNES SOMOS?</p></td>
-            <td id="infot"><p id="tabletitle">¿QUÉ HACEMOS?</p></td>
-        </tr>
-        <tr id="inforow">
-            <td id="infot"><p id="tablecont">Somos un equipo de profesionales apasionados por el fomento del emprendimiento en la República Dominicana.
-                 Nos hemos unido para crear Tech Fomenta RD, una plataforma dedicada a apoyar a los futuros empresarios del país, proporcionando 
-                 las herramientas y conocimientos necesarios para tener éxito en sus iniciativas.</p></td>
-            <td id="infot"><p id="tablecont">En Tech Fomenta RD, ofrecemos una gama integral de servicios diseñados para empoderar a emprendedores de entre 18 y 40 años. 
-                Nuestro enfoque se centra en tres pilares fundamentales: Educación Empresarial, Financiera y Tecnológica. </p></td>
-        </tr></center>
-    </table>
-
-
+    <b style="text-align: center;">© 2024 TechFomenta RD - Todos los derechos reservados.</b> <b style="margin-left: 10%; text-align: center;">Basado en República Dominicana.</b><br><br>
+    <p style="margin-left: 10%; text-align: justify;">Participantes: Alina Báez, Jean Montero, Enlil Núñez, Paola Saviñón y Diana Saviñón</p>
+    <p style="margin-left: 10%; text-align: justify;">Colegio Bilingüe New Horizons - 12mo Grado / 6to de Bachillerato</p>
+    <p style="margin-left: 10%; text-align: justify;">Contacto: <a href="mailto:info@techfomentard.com" style="color: #FFD571;">info@techfomentard.com</a></p>
+    <b style="text-align: center;">¡Síguenos en nuestras redes sociales!</b> <p style="color: #009975; text-align: center;">@TechFomentaRD</p> 
+    
+</footer>
 </body>
 </html>
